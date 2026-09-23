@@ -88,7 +88,9 @@ export default function Home() {
                   <div className="meta">
                     <Clock size={12} />
                     <span>
-                      {new Date("2026-09-10").toLocaleDateString("en-GB")}
+                      {new Date("2026-09-10").toLocaleDateString("en-GB", {
+                        timeZone: "UTC",
+                      })}
                     </span>
                     <span>by Anshuman </span>
                   </div>
