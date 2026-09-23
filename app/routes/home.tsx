@@ -41,7 +41,6 @@ export default function Home() {
             Start Building <ArrowRight className="icon" />
           </a>
           <Button variant="outline" size="lg" className="demo">
-            {" "}
             Watch Demo
           </Button>
         </div>
