@@ -66,9 +66,10 @@ export const createProject = async ({
     renderedImage: resolvedRender,
   };
   try {
+    await puter.kv.set(`project:${payload.id}`, payload);
     return payload;
   } catch (e) {
-    console.log("failed to load project", e);
+    console.error("failed to save project", e);
     return null;
   }
 };
