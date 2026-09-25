@@ -2,57 +2,120 @@
 
 <div align="center">
 
-[![Live Demo](https://img.shields.io/badge/Demo-archiva--topaz.vercel.app-00dfa2?style=for-the-badge&logo=vercel&logoColor=white)](https://archiva-topaz.vercel.app/)
-[![GitHub Repo](https://img.shields.io/badge/GitHub-Anshuman10703%2FArchiva-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Anshuman10703/Archiva)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+### AI-Powered Project Archive & Visualization Platform
 
-  <p align="center">
-    <strong>A modern, fast, and intuitive digital archive & resource management platform.</strong>
-    <br />
-    <a href="https://archiva-topaz.vercel.app/"><strong>Explore the Live App »</strong></a>
-    <br />
-    <br />
-    <a href="#-features">Features</a>
-    ·
-    <a href="#-tech-stack">Tech Stack</a>
-    ·
-    <a href="#-getting-started">Getting Started</a>
-    ·
-    <a href="#-project-structure">Project Structure</a>
-    ·
-    <a href="#-contributing">Contributing</a>
-  </p>
+**Upload your projects. Preserve your work. Visualize your ideas.**
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Archiva-00dfa2?style=for-the-badge&logo=vercel&logoColor=white)](https://archiva-topaz.vercel.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/Anshuman10703/Archiva)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 </div>
 
 ---
 
-## 📖 Overview
+## ✨ Overview
 
-**Archiva** is a responsive web application crafted to simplify the process of storing, categorizing, and discovering digital files and assets. Whether managing personal project bookmarks, essential documents, or developer resources, Archiva provides a clean, clutter-free user interface paired with reliable performance.
+**Archiva** is a modern project archiving and visualization platform designed to help developers preserve, organize, and showcase their work.
 
-🔗 **Live Deployment:** [https://archiva-topaz.vercel.app/](https://archiva-topaz.vercel.app/)
+Instead of letting projects disappear across different GitHub repositories, local folders, cloud drives, and screenshots, Archiva provides a centralized space where projects can be uploaded and transformed into visually organized project archives.
+
+The platform focuses on making project documentation and presentation **simple, visual, and developer-friendly**.
+
+---
+
+## 🚀 Live Demo
+
+🌐 **[Visit Archiva](https://archiva-topaz.vercel.app/)**
 
 ---
 
 ## ✨ Features
 
-- ⚡ **Instant Search & Categorization:** Quickly retrieve records and assets using rapid keyword search and category tags.
-- 🎨 **Minimal & Modern UI:** Designed with clean aesthetic standards, subtle transitions, and mobile-first responsiveness.
-- 📱 **Fully Responsive:** Adapts seamlessly across desktop, tablet, and mobile screens.
-- 🚀 **Optimized Delivery:** Deployed on Vercel's global edge network for fast load times and reliable uptime.
-- 🛡️ **Extensible Architecture:** Modular code structure allowing easy plug-in for backend APIs, database providers, and authentication modules.
+- 📤 **Project Upload**
+  - Upload project files through a simple interface.
+  - Track upload progress with visual feedback.
+
+- 🖼️ **Project Images**
+  - Upload and associate visual assets with projects.
+  - Handle image storage and rendering through the hosting layer.
+
+- 📁 **Project Organization**
+  - Keep projects organized in a centralized archive.
+  - Make previously completed projects easier to discover and revisit.
+
+- 🔐 **Authentication**
+  - Secure user authentication using Puter authentication.
+
+- ☁️ **Cloud-Based Storage**
+  - Store project assets using Puter's cloud infrastructure.
+
+- 🎨 **Modern UI**
+  - Responsive interface built with React.
+  - Clean component-based architecture.
+  - Designed around a minimal developer-focused experience.
+
+- ⚡ **Fast & Modern Stack**
+  - Built with React and TypeScript.
+  - Optimized for modern web development and deployment.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Framework & Libraries:** [React.js](https://react.dev/) / [Next.js](https://nextjs.org/)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-- **Icons & Assets:** [Lucide Icons](https://lucide.dev/)
-- **Deployment & Hosting:** [Vercel](https://vercel.com/)
-- **Tooling:** Git, GitHub, ESLint, Prettier
+### Frontend
+
+- **React**
+- **TypeScript**
+- **React Router**
+- **Tailwind CSS**
+- **Lucide React**
+
+### Backend / Cloud
+
+- **Puter.js**
+- **Puter Authentication**
+- **Puter Hosting / Storage**
+
+### Development
+
+- **Vite**
+- **ESLint**
+- **Git & GitHub**
+
+### Deployment
+
+- **Vercel**
+
+---
+
+## 🏗️ Architecture
+
+```text
+┌──────────────────────────────┐
+│           Archiva            │
+│        React Frontend        │
+└──────────────┬───────────────┘
+               │
+               ▼
+┌──────────────────────────────┐
+│        React Router          │
+│       Application Flow       │
+└──────────────┬───────────────┘
+               │
+       ┌───────┴────────┐
+       ▼                ▼
+┌──────────────┐ ┌───────────────┐
+│    Puter     │ │   Project     │
+│     Auth     │ │    Upload     │
+└──────────────┘ └───────┬───────┘
+                          │
+                          ▼
+                  ┌───────────────┐
+                  │ Puter Hosting │
+                  │    Storage    │
+                  └───────────────┘
+```
 
 ---
 
@@ -71,38 +134,38 @@ Ensure you have installed:
 
 1. **Clone the repository:**
 
-   ```bash
+```bash
    git clone https://github.com/Anshuman10703/Archiva.git
    cd Archiva
-   ```
+```
 
 2. **Install dependencies:**
 
-   ```bash
+```bash
    npm install
    # or
    yarn install
    # or
    pnpm install
-   ```
+```
 
 3. **Configure Environment Variables:**
    Create a `.env.local` or `.env` file in the root directory if any custom variables or API keys are required:
 
-   ```env
+```env
    # Example:
    # NEXT_PUBLIC_API_URL=https://api.example.com
-   ```
+```
 
 4. **Run the local development server:**
 
-   ```bash
+```bash
    npm run dev
    # or
    yarn dev
    # or
    pnpm dev
-   ```
+```
 
 5. **Open in browser:**
    Navigate to [http://localhost:3000](http://localhost:3000) (or the port specified in your terminal).
@@ -136,7 +199,7 @@ To deploy your own fork:
 1. Fork or push this repository to your GitHub account.
 2. Sign in to your [Vercel Dashboard](https://vercel.com/dashboard) and click **"Add New Project"**.
 3. Import the `Archiva` repository.
-4. Set the project preset (e.g. Next.js / Vite / CRA) and configure any environment variables.
+4. Set the project preset (e.g. Vite / React) and configure any environment variables.
 5. Click **Deploy**.
 
 ---
@@ -149,19 +212,16 @@ Contributions make the open-source community an incredible place to learn, inspi
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your Changes (`git commit -m 'feat: Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more information.
+5. Open a Pull Request against the `main` branch.
 
 ---
 
 ## 👤 Author
 
 **Anshuman Singh**
+B.Tech Computer Science Engineer
+Frontend / Full-Stack Developer
 
 - GitHub: [@Anshuman10703](https://github.com/Anshuman10703)
-- Live Project: [https://archiva-topaz.vercel.app/](https://archiva-topaz.vercel.app/)
+- Repository: [Anshuman10703/Archiva](https://github.com/Anshuman10703/Archiva)
+- Live Project: [archiva-topaz.vercel.app](https://archiva-topaz.vercel.app/)
