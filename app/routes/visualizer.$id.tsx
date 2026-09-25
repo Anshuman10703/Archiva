@@ -9,7 +9,7 @@ import {
   ReactCompareSliderImage,
 } from "react-compare-slider";
 
-const VisualizerId = () => {
+const visualizerId = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const { userId } = useOutletContext<AuthContext>();
@@ -229,4 +229,4 @@ const VisualizerId = () => {
     </div>
   );
 };
-export default VisualizerId;
+export default visualizerId;
